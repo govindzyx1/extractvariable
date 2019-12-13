@@ -1,0 +1,13 @@
+<ExtractVariables name='EV-1'>
+  <Source>contrivedMessage</Source>
+  <VariablePrefix>extracted</VariablePrefix>
+  <IgnoreUnresolvedVariables>false</IgnoreUnresolvedVariables>
+  <XMLPayload>
+    <Variable name='svcname' type='string'>
+      <XPath>/Service/ServiceHeader/ServiceName/text()</XPath>
+    </Variable>
+    <Variable name='requestid' type='string'>
+      <XPath>/Service/TrackingInfo/RequestId/text()</XPath>
+    </Variable>
+  </XMLPayload>
+</ExtractVariables>

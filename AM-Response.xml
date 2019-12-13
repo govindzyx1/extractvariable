@@ -1,0 +1,13 @@
+<AssignMessage name='AM-Response'>
+  <Set>
+    <Headers>
+      <Header name='ServiceName'>{extracted.svcname}</Header>
+      <Header name='RequestId'>{extracted.requestid}</Header>
+    </Headers>
+    <Payload contentType='application/json'>{
+    "status" : "ok"
+}</Payload>
+  </Set>
+  <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+  <AssignTo createNew='false' transport='http' type='response'/>
+</AssignMessage>

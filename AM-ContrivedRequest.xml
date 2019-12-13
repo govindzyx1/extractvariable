@@ -1,0 +1,23 @@
+<AssignMessage name='AM-ContrivedRequest'>
+  <DisplayName>AM-ContrivedRequest</DisplayName>
+  <AssignTo createNew='true' transport='http' type='request'>contrivedMessage</AssignTo>
+  <IgnoreUnresolvedVariables>false</IgnoreUnresolvedVariables>
+  <Set>
+    <Payload contentType='application/xml'>
+<Service>
+  <ServiceHeader>
+    <ServiceName>GetInfo</ServiceName>
+    <Operation>GetCustInfo</Operation>
+  </ServiceHeader>
+  <TrackingInfo>
+    <RequestId>1234567890</RequestId>
+    <RequestTs>01/02/2018 01:00:00.000</RequestTs>
+  </TrackingInfo>
+  <RequestInfo>
+    <Name>Any Name</Name>
+  </RequestInfo>
+</Service>
+</Payload>
+    <Verb>POST</Verb>
+  </Set>
+</AssignMessage>
